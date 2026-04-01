@@ -10,8 +10,8 @@ This project is an experimental study that compares the behavior and performance
 To analyze and compare how different activation functions impact neural network learning by training networks with identical architectures but different activation mechanisms on the same regression task.
 
 ### Task
-- **Function to Learn**: Cosine function: $f(x) = \cos(x)$
-- **Input Range**: $x \in [-10, 10]$
+- **Function to Learn**: Scaled Cosine function: $f(x) = 5\cos(x)$
+- **Input Range**: $x \in [-5, 5]$
 - **Data Points**: 300 evenly distributed samples
 
 ### Network Architecture
@@ -50,6 +50,7 @@ To analyze and compare how different activation functions impact neural network 
 ### Training Configuration
 - **Learning Rate**: $1 \times 10^{-5}$
 - **Number of Epochs**: 1,000
+- **Target Function**: $f(x) = 5\cos(x)$
 - **Training Method**: Backpropagation with weight and bias updates
 - **Loss**: Mean Squared Error (implicit from gradient descent)
 
@@ -85,8 +86,8 @@ The experiment generates **animated visualizations** for each activation functio
 ### Visualization Details
 - Animation updates every 5 epochs for clarity
 - Each frame displays the current epoch number and activation function name
-- Horizontal range: [-10, 10]
-- Vertical range: [-1.5, 1.5]
+- Horizontal range: [-5, 5]
+- Vertical range: [-10, 10]
 
 ## How to Run
 
